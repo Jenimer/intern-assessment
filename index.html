@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel='stylesheet' type='text/css' href='style.css' />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+    <title>Intern Assessment</title>
+  </head>
+  <body>
+    <header class='sale'>
+      <img  id='logo' width='250' src='./assets/xbox.svg'>
+    </header>
+    <div class='wrapper'>
+      <div class='container'>
+        <div id='collection'>Collection
+          <div class='images'>
+            <img width='200' height='300' src='./assets/Dishonored.jpg'>
+            <img width='200' height='300' src='./assets/halo3.jpg'>
+            <img width='200' height='300' src='./assets/GOW2.jpeg'>
+            <img width='200' height='300' src='./assets/DXHR.jpg'>
+            <img width='200' height='300' src='./assets/HL2.jpg'>
+            <img widht='200' height='300' src='./assets/portal2.jpg'>
+            <img width='200' height='300' src='./assets/halo.jpg'>
+          </div>
+        </div>
+        <div class='contact-info'>
+
+          <div id='contact'>
+            <h2>Contact Us</h2>
+            <p>Send us a message to let us know how we can help. We typically respond within 24 hours.</p>
+            <p>You can also give us a call 1-801-994-6987</p>
+            <p>Or send us an email</p>
+            <p>at contact@nuethic.com</p>
+          </div>
+          <div id='contact-form'>
+            <Form id='form-fields' method='post' action='formHandler.php'>
+              <label>Name</label>
+              <input
+              name='name'
+              type='text' 
+              placeholder='Name' 
+              type='text' 
+              required/>
+              <br>
+              <label>Email</label>
+              <input 
+              name='email'
+              type='email' 
+              placeholder='Email' 
+              type='text' 
+              required/>
+              <br>
+              <label>Phone</label>
+              <input 
+              name='phone'
+              type='phone' 
+              placeholder='Phone' 
+              type='text' 
+              required/>
+              <br>
+              <label>What can we do for you?</label>
+              <textarea 
+                required
+                row='12'
+                col='50'
+                >
+              </textarea>
+              <br>
+              <div class='submit'> 
+                <input
+                class='button'
+                type='submit'
+                />
+              </div>
+            </Form>       
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src='main.js'></script>
+  </body>
+</html>
