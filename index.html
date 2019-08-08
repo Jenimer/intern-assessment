@@ -1,27 +1,52 @@
 <!DOCTYPE html>
 <html>
   <head>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel='stylesheet' type='text/css' href='style.css' />
     <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
     <title>Intern Assessment</title>
   </head>
+  <div class='container'>
+  <header class='sale'>
+    <img  id='logo' width='250' src='./assets/xbox.svg'>
+  </header>
   <body>
-    <header class='sale'>
-      <img  id='logo' width='250' src='./assets/xbox.svg'>
-    </header>
-    <div class='wrapper'>
-      <div class='container'>
-        <div id='collection'>Collection
-          <div class='images'>
-            <img width='200' height='300' src='./assets/Dishonored.jpg'>
-            <img width='200' height='300' src='./assets/halo3.jpg'>
-            <img width='200' height='300' src='./assets/GOW2.jpeg'>
-            <img width='200' height='300' src='./assets/DXHR.jpg'>
-            <img width='200' height='300' src='./assets/HL2.jpg'>
-            <img widht='200' height='300' src='./assets/portal2.jpg'>
-            <img width='200' height='300' src='./assets/halo.jpg'>
-          </div>
+        <div class='collection'>          
+        <div class='collHead'>
+          <h3>Games</h3>
+          <link>See full collection</link>
         </div>
+            <ul>
+              <li>
+                <img width='200' height='300' src='./assets/halo3.jpg'>HALO 3</img>
+              </li>
+
+              <li>
+                <img width='200' height='300' src='./assets/GOW2.jpeg'>GEARS OF WAR</img>
+              </li>
+              
+              <li>
+                  <img width='200' height='300' src='./assets/GOW2.jpeg'>GEARS OF WAR</img>
+              </li>
+
+              <li>
+                <img width='200' height='300' src='./assets/Dishonored.jpg'>DISHONORED</img>
+              </li>
+              
+              <li>
+                <img width='200' height='300' src='./assets/DXHR.jpg'>DEUS EX</img>
+              </li>
+
+              <li>
+                <img width='200' height='300' src='./assets/HL2.jpg'>HALF-LIFE 2</img>
+              </li>
+
+              <li>
+                <img widht='200' height='300' src='./assets/portal2.jpg'>PORTAL 2</img>
+              </li>
+            </ul>
+                       
+          </div>
         <div class='contact-info'>
 
           <div id='contact'>
@@ -60,8 +85,6 @@
               <label>What can we do for you?</label>
               <textarea 
                 required
-                row='12'
-                col='50'
                 >
               </textarea>
               <br>
@@ -75,7 +98,5 @@
           </div>
         </div>
       </div>
-    </div>
-    <script src='main.js'></script>
   </body>
 </html>

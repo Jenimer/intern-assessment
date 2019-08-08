@@ -4,8 +4,11 @@
 
 header {
   display: flex;
+  background-image: url('./assets/bgimage.jpg')
 }
-
+body {
+  display: flex;
+}
 input {
   width: 100%;
 }
@@ -15,32 +18,49 @@ textarea {
   height: 100px;
 }
 
-
-.wrapper {
-  text-align: center;
+ul {
   display: flex;
-  border-style: solid;
+  list-style: none;
+  flex-direction: row;
+  justify-content: center;
+}
+
+li {
+  flex-direction: column;
+  margin: 2em;
+  display: inline-block;
+  text-align: center;
+  box-shadow: 10px 10px 15px slategray; 
   
 }
 
+
 .container {
-  justify-content: space-around;
   min-width: 100%;
+  justify-content: center;
 }
 
 .sale {
   text-align: center;
-  border-style: solid;
+  border-bottom: solid;
   justify-content: flex-start;
   min-width: 250px;
   min-height: 250px;
 }
 
-.contact-info {
-  font-family: Arial, Helvetica, sans-serif;
+.collHead {
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
+  align-items: center;
+  justify-content: space-between;
+}
+
+  
+
+.contact-info {
+  border-top: solid;
+  display: flex;
+  min-width: 100%;
+  justify-content: center;
 }
 
 .submit {
@@ -61,6 +81,7 @@ textarea {
 }
 #logo {
   margin-left: 5em;
+  z-index: 1;
 }
 
 #contact {
@@ -70,17 +91,10 @@ textarea {
   min-width: 250px;
   min-height: 250px ;
 }
+
 #contact h2 {
   text-align: center;
 }
-#collection{
-  overflow: hidden;
-  justify-content: center;
-  min-width: 250px;
-  min-height: 250px;
-}
-
-
 
 #contact-form {
   transform: skewx(-5deg);
@@ -93,7 +107,6 @@ textarea {
 }
 
 #form-fields {
-  box-sizing: border-box;
   font-size: .5rem;
   transform: skewx(5deg);
   margin: 25px;
