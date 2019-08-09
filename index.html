@@ -1,102 +1,175 @@
 <!DOCTYPE html>
 <html>
-  <head>
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel='stylesheet' type='text/css' href='style.css' />
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
-    <title>Intern Assessment</title>
-  </head>
-  <div class='container'>
-  <header class='sale'>
-    <img  id='logo' width='250' src='./assets/xbox.svg'>
-  </header>
+
+<head>
+  <meta charset='utf-8'>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel='stylesheet' type='text/css' href='style.css' />
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+  <title>Intern Assessment</title>
+</head>
+<div class='container'>
+  <div class='head'>
+    <header class='sale'>
+      <div id='logo'>
+        <h1>SALES</h1>
+        <h3>Up to 50% off</h3>
+      </div>
+    </header>
+  </div>
+
   <body>
-        <div class='collection'>          
-        <div class='collHead'>
-          <h3>Games</h3>
-          <link>See full collection</link>
-        </div>
-            <ul>
-              <li>
-                <img width='200' height='300' src='./assets/halo3.jpg'>HALO 3</img>
-              </li>
-
-              <li>
-                <img width='200' height='300' src='./assets/GOW2.jpeg'>GEARS OF WAR</img>
-              </li>
-              
-              <li>
-                  <img width='200' height='300' src='./assets/GOW2.jpeg'>GEARS OF WAR</img>
-              </li>
-
-              <li>
-                <img width='200' height='300' src='./assets/Dishonored.jpg'>DISHONORED</img>
-              </li>
-              
-              <li>
-                <img width='200' height='300' src='./assets/DXHR.jpg'>DEUS EX</img>
-              </li>
-
-              <li>
-                <img width='200' height='300' src='./assets/HL2.jpg'>HALF-LIFE 2</img>
-              </li>
-
-              <li>
-                <img widht='200' height='300' src='./assets/portal2.jpg'>PORTAL 2</img>
-              </li>
-            </ul>
-                       
-          </div>
-        <div class='contact-info'>
-
-          <div id='contact'>
-            <h2>Contact Us</h2>
-            <p>Send us a message to let us know how we can help. We typically respond within 24 hours.</p>
-            <p>You can also give us a call 1-801-994-6987</p>
-            <p>Or send us an email</p>
-            <p>at contact@nuethic.com</p>
-          </div>
-          <div id='contact-form'>
-            <Form id='form-fields' method='post' action='formHandler.php'>
-              <label>Name</label>
-              <input
-              name='name'
-              type='text' 
-              placeholder='Name' 
-              type='text' 
-              required/>
-              <br>
-              <label>Email</label>
-              <input 
-              name='email'
-              type='email' 
-              placeholder='Email' 
-              type='text' 
-              required/>
-              <br>
-              <label>Phone</label>
-              <input 
-              name='phone'
-              type='phone' 
-              placeholder='Phone' 
-              type='text' 
-              required/>
-              <br>
-              <label>What can we do for you?</label>
-              <textarea 
-                required
-                >
-              </textarea>
-              <br>
-              <div class='submit'> 
-                <input
-                class='button'
-                type='submit'
-                />
+    <div class='collection'>
+      <div class='collection-head'>
+        <h3>Collection</h3>
+        <nav><a href='#'>See full collection</a></nav>
+      </div>
+      
+      <div class='content'>
+        <div class='btn'>
+          <div id='left' class='slidebtn'> < </div> 
+        </div> 
+            <div id='slide1' class='slideContent'>
+              <div class='outer'>
+                <div class='outer-top'>
+                  <div id='disc'>-50%</div>
+                </div>
+                <div class='item'>
+                  <img src='./assets/halo3.jpg'><span>HALO 3</span></img>
+                  <div class='discount'>
+                    <p id='slashed'>$40</p>
+                    <p> $20</p>
+                  </div>
+                </div>
               </div>
-            </Form>       
+              <div class='outer'>
+                  <div class='outer-top'>
+                    <div id='disc'>-15%</div>
+                  </div>
+                <div class='item'>
+                  <img src='./assets/halo.jpg'><span>HALO 2</span></img>
+                  <div class='discount'>
+                    <p id='slashed'>$40</p>
+                    <p>$34</p>
+                  </div>
+                </div>
+              </div>
+              <div class='outer'>
+                  <div class='outer-top'>
+                    <div id='disc'>-30%</div>
+                  </div>
+                <div class='item'>
+                  <img src='./assets/GOW2.jpeg'><span>GEARS OF WAR 2</span></img>
+                  <div class='discount'>
+                    <p id='slashed'>$40</p>
+                    <p>$28</p>
+                  </div>
+                </div>
+              </div>
+              <div class='outer'>
+                  <div class='outer-top'>                      
+                        <div id='disc'>-25%</div>                      
+                  </div>
+                <div class='item'>
+                  <img src='./assets/Dishonored.jpg'><span>DISHONORED</span></img>
+                  <div class='discount'>
+                    <p id='slashed'>$40</p>
+                    <p>$30</p>
+                  </div>
+                </div>
+              </div>
+          </div>
+
+          <div id='slide2' class='slideContent'>
+            <div class='outer'>
+                <div class='outer-top'>
+                  <div id='disc'>-35%</div>
+                </div>
+              <div class='item'>
+                <img src='./assets/DXHR.jpg'><span>DEUS EX</span></img>
+                <div class='discount'>
+                  <p id='slashed'>$40</p>
+                  <p>$26</p>
+                </div>
+              </div>
+            </div>
+            <div class='outer'>
+                <div class='outer-top'>
+                  <div id='disc'>-25%</div>
+                </div>
+              <div class='item'>
+                <img src='./assets/HL2.jpg'><span>HALF-LIFE 2</span></img>
+                <div class='discount'>
+                  <p id='slashed'>$40</p>
+                  <p>$30</p>
+                </div>
+              </div>
+            </div>
+            <div class='outer'>
+                <div class='outer-top'>
+                  <div id='disc'>-50%</div>
+                </div>
+              <div class='item'>
+                <img src='./assets/morrowind.jpg'><span>MORROWIND</span></img>
+                <div class='discount'>
+                  <p id='slashed'>$40</p>
+                  <p>$20</p>
+                </div>
+              </div>
+            </div>
+            <div class='outer'>
+                <div class='outer-top'>
+                  <div id='disc'>-50%</div>
+                </div>
+              <div class='item'>
+                <img src='./assets/portal2.jpg'><span>PORTAL 2</span></img>
+                <div class='discount'>
+                  <p id='slashed'>$40</p>
+                  <p>$20</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class='btn'>
+            <div id='right' class='slidebtn'>></div>
           </div>
         </div>
       </div>
+      
+      
+      
+      <div class='contact-container'>
+        
+        <div id='contact'>
+          <h2>Contact Us</h2>
+          <p>Send us a message to let us know how we can help. We typically respond within 24 hours.</p>
+          <p>You can also give us a call 1-801-994-6987</p>
+          <p>Or send us an email</p>
+          <p>at contact@nuethic.com</p>
+        </div>
+        <div id='contact-form'>
+          <Form id='form-fields' method='post' action='formHandler.php'>
+            <label>Name</label>
+            <input name='name' type='text' placeholder='Name' type='text' required />
+            <br>
+            <label>Email</label>
+            <input name='email' type='email' placeholder='Email' type='text' required />
+            <br>
+            <label>Phone</label>
+            <input name='phone' type='phone' placeholder='Phone' type='text' required />
+            <br>
+            <label>What can we do for you?</label>
+            <textarea required>
+            </textarea>
+            <br>
+            <div class='submit'>
+              <input class='button' type='submit' />
+            </div>
+          </Form>
+        </div>
+      </div>
+    </div>
+        <script src='main.js'></script>
   </body>
+
 </html>
