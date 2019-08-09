@@ -39,6 +39,20 @@ textarea {
   
 }
 
+.flash {
+  display: flex;
+  background: blue;
+  color: rgb(215, 215, 215);
+  justify-content: center;
+  font-size: 1em;
+}
+
+#bold {
+  color: white;
+  margin-left: 1em;
+  margin-right: .25em;
+}
+
 .sale {
   text-align: center;
   border-bottom: solid;
@@ -226,6 +240,7 @@ textarea {
 /* media queries */
 
 @media screen and (max-width: 1500px){
+
   .content {
     display: flex;
     justify-content: center;
